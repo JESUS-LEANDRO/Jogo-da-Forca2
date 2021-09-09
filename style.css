@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 212, 212); 
+}
+
+#container {
+    background-color: rebeccapurple;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+#display-Top {
+    background: rgb(4, 65, 119);
+    background: linear-gradient(180deg, rgba(4, 65, 119, 1) 0%, rgba(75, 103, 168, 1) 100%);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer {
+    width: 100%;
+    height: 30px;
+    background: rgb(244, 196, 160);
+    background: linear-gradient(180deg, rgba(244, 196, 160, 1) 0%, rgba(233, 158, 101, 1) 16%);
+}
+
+#display-bottom {
+    width: 100%;
+    height: 30%;
+    background-color: yellowgreen;
+    background-image: url('image/fundomadeira2.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dicas {
+    width: 97%;
+    height: 120px;
+    background-color: #75b7d7;
+    border: 3px solid #366998;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#dicas-espace {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 3px 2px 2px #205d93;
+    color: white;
+    font-weight: bold;
+}
+
+#cores {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-shadow: 3px 1px 5px #7eb1c2;
+    color: white;
+    font-weight: bold;
+}
+
+#img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forca {
+    background-color: #00703a;
+    width: 250px;
+    border: 15px solid #622008;
+    border-radius: 15px;
+    position: relative;
+}
+
+#palavra {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 50px 5px 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#teclado {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#teclado button {
+    width: 50px;
+    height: 50px;
+    background-color: #dfc48d;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f7faff;
+    text-shadow: 2px 2px 1px #402305;
+    outline: none;
+
+}
+
+#palavra input {
+    background-color: #dfc48d;
+    border: 3px solid #ece2be;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f7faff;
+    text-shadow: 2px 2px 1px #402305;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+#boneco {
+    width: 120px;
+    height: 220px;
+    position: absolute;
+    top: 50px;
+    left: 95px;
+}
+
+#cabeca {
+    position: absolute;
+    left: 25px;
+    display: none;
+}
+
+#corpo {
+    position: absolute;
+    left: 25px;
+    top: 55px;
+    display: none;
+}
+
+#barco-es {
+    position: absolute;
+    left: 6px;
+    top: 60px;
+    display: none;
+}
+
+#barco-di {
+    position: absolute;
+    left: 42px;
+    top: 60px;
+    display: none;
+}
+
+#perna-es {
+    position: absolute;
+    left: 8px;
+    top: 110px;
+    display: none;
+}
+
+#perna-di {
+    position: absolute;
+    left: 38px;
+    top: 110px;
+    display: none;
+}
+
+@media screen and (max-width: 915px) {
+    #conteiner {
+        height: auto;
+    }
+
+    #teclado button {
+        width: 50px;
+        height: 50px;
+    }
+
+    #img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 780px) {
+
+    #forca,
+    #professor {
+        width: 180px;
+    }
+
+    #forca img {
+        width: 150px;
+    }
+
+    #boneco img {
+        width: 40px;
+    }
+
+    #boneco {
+        top: 37px;
+        left: 66px;
+    }
+
+    #img {
+        width: 40%;
+    }
+
+    #palavra {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    #container {
+        width: 100%;
+        height: auto;
+    }
+
+    #forca,
+    #professor {
+        width: 180px;
+    }
+
+    #forca img {
+        width: 150px;
+    }
+
+    #boneco img {
+        width: 40px;
+    }
+
+    #boneco {
+        top: 37px;
+        left: 66px;
+    }
+
+    #img {
+        width: 40%;
+    }
+
+    #palavra {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 450px) {
+    #container {
+        width: 100%;
+        height: auto;
+
+    }
+
+    #teclado {
+        margin-top: 20px;
+    }
+
+    #teclado button {
+        width: 40px;
+        height: 40px;
+        margin: 3px;
+    }
+
+    #forca,
+    #professor {
+        width: 180px;
+    }
+
+    #forca img {
+        width: 150px;
+    }
+
+    #boneco img {
+        width: 40px;
+    }
+
+    #boneco {
+        top: 37px;
+        left: 66px;
+    }
+    #professor{
+        display: none;
+    }
+
+    #img {
+        width: 40%;
+    }
+
+    #palavra {
+        padding: 10px;
+        margin: 40px 0;
+    }
+}
+
